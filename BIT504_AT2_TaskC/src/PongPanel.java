@@ -245,20 +245,20 @@ private final static String WINNER_TEXT = "WIN!";
 	{
 		if(event.getKeyCode() == KeyEvent.VK_UP)
 		{
-			paddle2.setyVelocity(-1);
+			paddle2.setyVelocity(-3);
 		}
 		else if (event.getKeyCode() == KeyEvent.VK_DOWN)
 		{
-			paddle2.setyVelocity(1);
+			paddle2.setyVelocity(3);
 		}
 		
 		if (event.getKeyCode() == KeyEvent.VK_W)
 		{
-			paddle1.setyVelocity(-1);
+			paddle1.setyVelocity(-3);
 		}
 		else if (event.getKeyCode() == KeyEvent.VK_S)
 		{
-			paddle1.setyVelocity(1);
+			paddle1.setyVelocity(3);
 		}
 	}
 
