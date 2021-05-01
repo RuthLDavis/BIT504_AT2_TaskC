@@ -3,7 +3,7 @@ import java.awt.Color;
 public class Paddle extends Sprite {
 	
 	// create the constant variables for the Paddle class
-		private static final Color PADDLE_COLOUR = Color.WHITE;
+		private static final Color PADDLE_COLOUR = Color.BLUE;
 		private static final int PADDLE_WIDTH = 10;
 		private static final int PADDLE_HEIGHT = 100;
 		private static final int DISTANCE_FROM_EDGE = 40;
