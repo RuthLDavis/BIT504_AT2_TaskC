@@ -95,7 +95,7 @@ private final static String WINNER_TEXT = "WIN!";
 		Graphics2D g2d = (Graphics2D) g.create();
 		Stroke dashed = new BasicStroke(3, BasicStroke.CAP_BUTT, BasicStroke.JOIN_BEVEL, 0, new float[] {9}, 0);
 		g2d.setStroke(dashed);
-		g2d.setPaint(Color.WHITE);
+		g2d.setPaint(Color.YELLOW);
 		g2d.drawLine(getWidth() / 2, 0, getWidth() / 2, getHeight());
 		g2d.dispose();
 	}
@@ -116,6 +116,7 @@ private final static String WINNER_TEXT = "WIN!";
 		String leftScore = Integer.toString(player1Score);
 		String rightScore = Integer.toString(player2Score);
 		g.setFont(scoreFont);
+		g.setColor(Color.YELLOW);
 		g.drawString(leftScore, SCORE_TEXT_X_PADDING, SCORE_TEXT_Y_PADDING);
 		g.drawString(rightScore, getWidth()-SCORE_TEXT_X_PADDING, SCORE_TEXT_Y_PADDING);
 	}
@@ -127,6 +128,7 @@ private final static String WINNER_TEXT = "WIN!";
         {
            Font winnerFont = new Font(WINNER_FONT_FAMILY, Font.BOLD, WINNER_FONT_SIZE);
            g.setFont(winnerFont);
+           g.setColor(Color.RED);
            int xPosition = getWidth() / 2;
            
            if(gameWinner == Player.One) 
